@@ -1,7 +1,7 @@
 <?php
 /*Plugin Name: Woo Payment Gateway
  Plugin URI: www.bradstreet.co
- Description: Braintree For Woocommerce allows merchants to securely process customer payments through their eCommerce sites. This plugin supports Braintree's new v.zero solution. Site admins have the ability to use the UI drop in feature which contains hosted fields or they can opt to use a custom ui for payment fields. The level of PCI compliance for this plugin ranges from SAQ A for the hosted form, to SAQ A-EP for the customer form. Please disable any other Braintree payment plugins before activating this plugin.  
+ Description: Braintree For Woocommerce allows merchants running woocommerce to securely process payments using Braintree's v.zero API.
  Version: 1.1.0
  Author: Clayton Rogers, mr.clayton@bradstreet.co
  Author URI: 
