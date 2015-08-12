@@ -1,7 +1,7 @@
 <?php
 /*Plugin Name: Woo Payment Gateway
  Plugin URI: www.bradstreet.co
- Description: Braintree For Woocommerce allows merchants running woocommerce to securely process payments using Braintree's v.zero API.
+ Description: Braintree For Woocommerce allows merchants to securely process customer payments through their eCommerce sites. This plugin supports Braintree's new v.zero solution. Site admins have the ability to use the UI drop in feature which contains hosted fields or they can opt to use a custom ui for payment fields. The level of PCI compliance for this plugin ranges from SAQ A for the hosted form, to SAQ A-EP for the customer form. Please disable any other Braintree payment plugins before activating this plugin.  
  Version: 1.1.0
  Author: Clayton Rogers, mr.clayton@bradstreet.co
  Author URI: 
@@ -195,10 +195,8 @@ function init_wc_braintree_payment_gateway(){
 			 methods for later use. If you have configured Braintree to connect to Paypal, then a Paypal button will also appear with the drop. The Braintree Custom UI
 			 is for those that want more flexibility in how the payment form looks. This form is not hosted and so subject to SAQ A-EP, which is a slightly higher level
 			 than SAQ A. If the checkout page is loaded with HTTPS, then the sandbox environment will automaticlally be loaded. Ensure you have a valid SSL certificate. Along with the 
-			 "Braintree Custom UI", admin's can select to enable Paypal. The Dropin form and Custom form are all generated in the file payment.php, located in the plugin directory
-			 /includes/templates/checkout/payment-method.php. This file is part of woocommerce. If you are using standard woocommerce or your own template implementation of woocommerce, 
-			 this plugin file will override those. This is necessary because currently Woocommerce has Ajax calls that are made when the shopping cart is loaded and it prevents the Braintree Dropin form
-			 from appearing.</p></div>
+			 "Braintree Custom UI", admin's can select to enable Paypal. If you wish you change the look of the custom ui, you can create a folder in your template directory
+			 and name it "braintree-template." Copy the assets folder into the "braintree-template" folder and then edit the braintree-for-woocommerce.css file.</p></div>
 			 <table class="form-table">
 			 <?php $this->generate_settings_html(); ?>
 			 </table> <?php
