@@ -194,7 +194,7 @@ function init_wc_braintree_payment_gateway(){
 			 "Braintree Dropin UI" the customer will see a Braintree hosted form for credit card entry. Customers have the option to save the payment
 			 methods for later use. If you have configured Braintree to connect to Paypal, then a Paypal button will also appear with the drop. The Braintree Custom UI
 			 is for those that want more flexibility in how the payment form looks. This form is not hosted and so subject to SAQ A-EP, which is a slightly higher level
-			 than SAQ A. If the checkout page is loaded with HTTPS, then the sandbox environment will automaticlally be loaded. Ensure you have a valid SSL certificate. Along with the 
+			 than SAQ A. If the checkout page is loaded without HTTPS, then the sandbox environment will automaticlally be loaded. Ensure you have a valid SSL certificate. Along with the 
 			 "Braintree Custom UI", admin's can select to enable Paypal. If you wish you change the look of the custom ui, you can create a folder in your template directory
 			 and name it "braintree-template." Copy the assets folder into the "braintree-template" folder and then edit the braintree-for-woocommerce.css file.</p></div>
 			 <table class="form-table">
